@@ -21,7 +21,7 @@ void StyleModifier::addOption(QString str)
 
 QString StyleModifier::getStyle()
 {
-    return style+': '+options.at(qrand() % options.count());
+    return style+QString(": ")+options.at(qrand() % options.count())+QString(";");
 }
 
 

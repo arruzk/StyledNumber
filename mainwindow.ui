@@ -19,11 +19,24 @@
      <rect>
       <x>30</x>
       <y>100</y>
-      <width>401</width>
-      <height>61</height>
+      <width>421</width>
+      <height>81</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout"/>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>260</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Создать!</string>
+    </property>
    </widget>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>

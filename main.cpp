@@ -12,15 +12,15 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
     qsrand (QDateTime::currentMSecsSinceEpoch());
 
-  /*  QFile File(":/style.qss");
+    QFile File(":/style.qss");
     File.open(QFile::ReadOnly);
     QString StyleSheet = QLatin1String(File.readAll());
-    qApp->setStyleSheet(StyleSheet);*/
+    qApp->setStyleSheet(StyleSheet);
 
     MainWindow w;
     w.show();
-    for(int i = 0; i<10; i++)
-        qDebug()<<t.getStyle();
+/*    for(int i = 0; i<10; i++)
+        qDebug()<<t.getStyle();*/
 
     return a.exec();
 }
