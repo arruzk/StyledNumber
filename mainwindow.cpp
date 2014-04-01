@@ -17,16 +17,17 @@ MainWindow::MainWindow(QWidget *parent) :
     StyleModifier *fontSize = new StyleModifier("font-size", lst);
     QStringList alphabet;
     alphabet << "I" << "II" << "III" << "IV" << "V" << "VI" << "VII" << "VIII" << "IX";
-    ng = new NumberGenerator(alphabet);
-    ng->addModifire(color);
-    ng->addModifire(fontSize);
+    m_numGenerator = new NumberGenerator(alphabet);
+    m_numGenerator->addModifire(color);
+    m_numGenerator->addModifire(fontSize);
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
 }
-void MainWindow::deleteWidgetInLayout(){
+void MainWindow::deleteWidgetInLayout()
+{
     if ( ui->horizontalLayout != NULL )
     {
         QLayoutItem* item;
@@ -41,6 +42,6 @@ void MainWindow::deleteWidgetInLayout(){
 void MainWindow::on_pushButton_clicked()
 {
     deleteWidgetInLayout();
-    foreach(QLabel *t, ng->generateLabel())
+    foreach(QLabel *t, m_numGenerator->generateLabel())
         ui->horizontalLayout->addWidget(t);
 }

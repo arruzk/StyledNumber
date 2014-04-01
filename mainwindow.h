@@ -20,9 +20,11 @@ private slots:
     void on_pushButton_clicked();
 
 private:
-    Ui::MainWindow *ui;
-    NumberGenerator *ng;
     void deleteWidgetInLayout();
+
+private:
+    Ui::MainWindow *ui;
+    NumberGenerator* m_numGenerator;
 };
 
 #endif // MAINWINDOW_H

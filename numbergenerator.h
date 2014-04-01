@@ -20,10 +20,13 @@ public:
 signals:
 
 public slots:
+
 private:
     QStringList getNumbers();
-    QStringList alphabet;
-    QList<StyleModifier*> styles;
+
+private:
+    QStringList m_alphabet;
+    QList<StyleModifier*> m_styles;
 };
 
 #endif // NUMBERGENERATOR_H

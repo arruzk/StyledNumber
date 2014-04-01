@@ -7,13 +7,14 @@ class StyleModifier
 public:
     StyleModifier(QString _style, QStringList _options);
     QString getStyle() const;
-    void setStyle(const QString &value);
+    void setStyle(const QString& value);
 
     void addOption(QString str);
     QString getStyle();
+
 private:
-    QString style;
-    QStringList options;
+    QString m_style;
+    QStringList m_options;
 };
 
 #endif // STYLEMODIFIER_H
